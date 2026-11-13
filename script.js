@@ -170,7 +170,7 @@ const I18N = {
     "contact.address": "Aviano (PN), 33081 · activități în toată provincia Pordenone",
 
     "footer.name": "Asociația Culturală Recreativă „Romeni di Pordenone”",
-    "footer.tag": "Comunitatea românilor din Pordenone · La comunità romena di Pordenone",
+    "footer.tag": "La comunità romena di Pordenone · Comunitatea românilor din Pordenone",
   },
 
   it: {
@@ -256,14 +256,14 @@ const I18N = {
     "contact.address": "Aviano (PN), 33081 · attività in tutta la provincia di Pordenone",
 
     "footer.name": "Associazione Culturale Ricreativa «Romeni di Pordenone»",
-    "footer.tag": "Comunitatea românilor din Pordenone · La comunità romena di Pordenone",
+    "footer.tag": "La comunità romena di Pordenone · Comunitatea românilor din Pordenone",
   },
 };
 
 /* ========================================================= */
 
 const LANG_KEY = "rdp-lang";
-const LANGS = ["ro", "it"];
+const LANGS = ["it", "ro"];
 
 const ICONS = {
   clock: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm1-13h-2v6l5 3 1-1.7-4-2.3V7Z"/></svg>',
@@ -278,11 +278,10 @@ function storedLang() {
   }
 }
 
+// Italian first; a visitor's own choice (RO/IT button) is remembered.
 function initialLang() {
   const saved = storedLang();
-  if (LANGS.includes(saved)) return saved;
-  const nav = (navigator.language || "").slice(0, 2).toLowerCase();
-  return nav === "it" ? "it" : "ro";
+  return LANGS.includes(saved) ? saved : "it";
 }
 
 function upcomingEvents() {
