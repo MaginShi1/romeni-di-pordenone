@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Romeni di Pordenone</title>
+  <meta name="description" content="Asociația Romeni di Pordenone — comunitatea românilor din provincia Pordenone. Associazione Romeni di Pordenone — la comunità romena della provincia di Pordenone.">
+  <meta property="og:title" content="Romeni di Pordenone">
+  <meta property="og:description" content="Comunitatea românilor din Pordenone · La comunità romena di Pordenone">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0B2A5B">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Sari la conținut</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Romeni di Pordenone">
+        <img src="assets/logo.png" alt="" width="52" height="52">
+        <span class="brand-text">
+          <span class="brand-name">Romeni di Pordenone</span>
+          <span class="brand-tag" data-i18n="brand.tag">Asociație culturală recreativă</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Menu">
+        <a href="#despre" data-i18n="nav.about">Despre noi</a>
+        <a href="#activitati" data-i18n="nav.activities">Activități</a>
+        <a href="#evenimente" data-i18n="nav.events">Evenimente</a>
+        <a href="#implica-te" data-i18n="nav.join">Implică-te</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Limba / Lingua">
+          <button type="button" data-lang="ro" aria-pressed="true">RO</button>
+          <button type="button" data-lang="it" aria-pressed="false">IT</button>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only" data-i18n="a11y.menu">Meniu</span>
+          <span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="kicker" data-i18n="hero.kicker">Cultură · Tradiție · Integrare</p>
+          <h1 data-i18n="hero.title">Un colț de acasă, în inima Friulului.</h1>
+          <p class="lead" data-i18n="hero.text">Asociația Culturală Recreativă Romeni di Pordenone (ARP) aduce împreună românii din Pordenone și din provincie. Păstrăm vii cântecul, portul și tradițiile românești și construim punți de prietenie cu comunitatea italiană.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary js-facebook" href="#" target="_blank" rel="noopener">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21h3.1Z"/></svg>
+              <span data-i18n="hero.cta1">Urmărește-ne pe Facebook</span>
+            </a>
+            <a class="btn btn-ghost" href="#contact" data-i18n="hero.cta2">Scrie-ne</a>
+          </div>
+          <!-- Filled from the first upcoming event in script.js -->
+          <a class="next-event" href="#evenimente" hidden>
+            <span class="next-event-label" data-i18n="hero.next">Următorul eveniment</span>
+            <span class="next-event-title"></span>
+            <span class="next-event-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+        <div class="hero-art">
+          <div class="hero-card">
+            <img src="assets/logo.png" alt="Logo: Associazione Culturale Ricreativa «Romeni di Pordenone» (ARP)" class="hero-logo" width="300" height="300">
+            <p class="hero-card-caption" aria-hidden="true">
+              <span lang="ro">Bine ați venit!</span>
+              <span class="dot">·</span>
+              <span lang="it">Benvenuti!</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="band" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="despre">
+      <div class="container about">
+        <div class="about-text">
+          <p class="kicker" data-i18n="about.kicker">Despre noi</p>
+          <h2 data-i18n="about.title">Cultură, tradiție și integrare</h2>
+          <blockquote class="quote">
+            <p data-i18n="about.quote">„Românii au o cultură vastă, rădăcini tradiționale, valori la care ținem. A locui în Italia înseamnă și integrare!”</p>
+          </blockquote>
+          <p data-i18n="about.p1">Suntem o asociație culturală și recreativă a comunității românești din provincia Pordenone. Organizăm festivaluri, spectacole și ateliere, participăm la evenimentele multiculturale din regiune și colaborăm cu alte asociații culturale și cu instituțiile locale.</p>
+          <p data-i18n="about.p2">Activitățile noastre sunt deschise tuturor: românilor, italienilor și oricui vrea să descopere frumusețea culturii românești.</p>
+        </div>
+        <ul class="values">
+          <li class="value">
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3 4 12l8 9 8-9-8-9Zm0 5 4 4-4 4-4-4 4-4Z"/></svg>
+            </span>
+            <h3 data-i18n="v1.title">Tradiții vii</h3>
+            <p data-i18n="v1.text">Cântec, dans și port popular: ducem mai departe ce am primit de acasă, pe scenele din Friuli.</p>
+          </li>
+          <li class="value">
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M2 8h20v2.5H2V8Zm2 3.5h16V19h-3v-2.5a5 5 0 0 0-10 0V19H4v-7.5Z"/></svg>
+            </span>
+            <h3 data-i18n="v2.title">Punți între culturi</h3>
+            <p data-i18n="v2.text">„Multe culori, același gust. Multe inimi, același scop.” Credem în schimbul de cultură dintre România și Italia.</p>
+          </li>
+          <li class="value">
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.8a4.3 4.3 0 0 1 7.5 2.7c0 5.4-7.5 10-7.5 10Z"/></svg>
+            </span>
+            <h3 data-i18n="v3.title">Solidaritate</h3>
+            <p data-i18n="v3.text">Ne sprijinim unii pe alții, iar donațiile strânse la evenimentele noastre merg în scopuri caritabile.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ACTIVITIES ============ -->
+    <section class="section section-alt" id="activitati">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-i18n="act.kicker">Ce facem</p>
+          <h2 data-i18n="act.title">Activitățile noastre</h2>
+        </div>
+        <div class="activities">
+          <article class="activity">
+            <span class="activity-num">01</span>
+            <h3 data-i18n="a1.title">Festivaluri</h3>
+            <p data-i18n="a1.text">Organizăm festivaluri dedicate culturii românești, cu muzică, dansuri, poezie, artă, cărți și gastronomie, precum Festivalul FOSAR de la Villa Varda.</p>
+          </article>
+          <article class="activity">
+            <span class="activity-num">02</span>
+            <h3 data-i18n="a2.title">Corul Flori de Dor</h3>
+            <p data-i18n="a2.text">Spectacolul și corul asociației duc cântecul popular românesc pe scenele din Friuli, alături de soliști și ansambluri folclorice.</p>
+          </article>
+          <article class="activity">
+            <span class="activity-num">03</span>
+            <h3 data-i18n="a3.title">Pentru copii</h3>
+            <p data-i18n="a3.text">Ateliere creative cu materiale reciclate și mici premii pentru toți participanții, ca cei mici să descopere tradițiile jucându-se.</p>
+          </article>
+          <article class="activity">
+            <span class="activity-num">04</span>
+            <h3 data-i18n="a4.title">Evenimente multiculturale</h3>
+            <p data-i18n="a4.text">Reprezentăm România la sărbători precum Jubileul Migranților din Pordenone sau Borgo Mondo din Udine.</p>
+          </article>
+          <article class="activity">
+            <span class="activity-num">05</span>
+            <h3 data-i18n="a5.title">Gastronomie</h3>
+            <p data-i18n="a5.text">Bufete româno-italiene, mici și preparate tradiționale: bucătăria noastră, împărțită cu toată lumea.</p>
+          </article>
+          <article class="activity">
+            <span class="activity-num">06</span>
+            <h3 data-i18n="a6.title">Cultură și cărți</h3>
+            <p data-i18n="a6.text">Prezentări de carte, expoziții de artă și artizanat, întâlniri cu scriitori și artiști români din Italia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EVENTS ============ -->
+    <section class="section" id="evenimente">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-i18n="ev.kicker">Calendar</p>
+          <h2 data-i18n="ev.title">Evenimente viitoare</h2>
+        </div>
+        <!-- Upcoming events are rendered from the EVENTS list in script.js -->
+        <ol class="events" id="events-list"></ol>
+        <p class="events-note">
+          <span data-i18n="ev.note">Noutățile și fotografiile de la evenimente apar pe pagina noastră de Facebook.</span>
+          <a class="js-facebook" href="#" target="_blank" rel="noopener" data-i18n="ev.noteLink">Vezi pe Facebook →</a>
+        </p>
+
+        <div class="past">
+          <h3 class="past-title" data-i18n="past.title">Din activitatea noastră</h3>
+          <div class="past-grid">
+            <article class="past-card">
+              <p class="past-meta"><span data-i18n="p1.date">13 septembrie 2025</span> · Villa Varda, Brugnera</p>
+              <h4 data-i18n="p1.title">Festivalul FOSAR</h4>
+              <p data-i18n="p1.text">Prima ediție a festivalului dedicat Anului Cultural România–Italia: muzică și dansuri populare, poezie, artă, cărți și gastronomie, realizat împreună cu mai multe asociații culturale, în prezența Consulului General al României la Trieste.</p>
+            </article>
+            <article class="past-card">
+              <p class="past-meta"><span data-i18n="p2.date">4 octombrie 2025</span> · Pordenone</p>
+              <h4 data-i18n="p2.title">Jubileul Migranților</h4>
+              <p data-i18n="p2.text">Am reprezentat România cu cântec, dans și port popular, defilând pe străzile orașului alături de celelalte comunități, până în Piazzetta Calderari.</p>
+            </article>
+            <article class="past-card">
+              <p class="past-meta"><span data-i18n="p3.date">27 iulie 2024</span> · Udine</p>
+              <h4 data-i18n="p3.title">Borgo Mondo</h4>
+              <p data-i18n="p3.text">Spectacolul Flori de Dor al asociației a urcat pe scena marii sărbători multiculturale din Udine.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GET INVOLVED ============ -->
+    <section class="join" id="implica-te">
+      <div class="band band-top" aria-hidden="true"></div>
+      <div class="container join-inner">
+        <div class="join-copy">
+          <p class="kicker kicker-light" data-i18n="join.kicker">Implică-te</p>
+          <h2 data-i18n="join.title">Comunitatea crește cu fiecare om nou.</h2>
+          <p data-i18n="join.text">Fie că abia ai ajuns în provincia Pordenone, fie că locuiești aici de ani buni, ușa noastră e deschisă. Vino la un eveniment, adu o idee sau dă o mână de ajutor.</p>
+        </div>
+        <ul class="join-list">
+          <li><strong data-i18n="j1.title">Participă</strong><span data-i18n="j1.text">Vino la festivaluri și sărbători, singur sau cu familia. Intrarea este de obicei liberă.</span></li>
+          <li><strong data-i18n="j2.title">Cântă sau dansează cu noi</strong><span data-i18n="j2.text">Ai voce sau îți place dansul popular? Scrie-ne și urcă pe scenă alături de noi.</span></li>
+          <li><strong data-i18n="j3.title">Colaborează</strong><span data-i18n="j3.text">Ești o asociație, o firmă sau o instituție? Hai să construim împreună următorul eveniment.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div class="contact-info">
+          <p class="kicker" data-i18n="contact.kicker">Contact</p>
+          <h2 data-i18n="contact.title">Hai să vorbim</h2>
+          <p data-i18n="contact.text">Ai o întrebare, vrei să participi sau să colaborezi cu noi? Scrie-ne pe email, pe WhatsApp sau pe Facebook. Îți răspundem cu drag, în română sau în italiană.</p>
+          <ul class="contact-list">
+            <li class="js-email-row" hidden>
+              <span class="contact-label" data-i18n="contact.email">Email</span>
+              <a class="js-email" href="#"></a>
+            </li>
+            <li class="js-phone-row" hidden>
+              <span class="contact-label" data-i18n="contact.phone">Telefon</span>
+              <span>
+                <a class="js-phone" href="#"></a>
+                <a class="whatsapp js-whatsapp" href="#" target="_blank" rel="noopener" hidden>WhatsApp</a>
+              </span>
+            </li>
+            <li>
+              <span class="contact-label">Facebook</span>
+              <a class="js-facebook" href="#" target="_blank" rel="noopener">Romeni di Pordenone</a>
+            </li>
+            <li>
+              <span class="contact-label" data-i18n="contact.where">Unde</span>
+              <span data-i18n="contact.address">Aviano (PN), 33081 · activități în toată provincia Pordenone</span>
+            </li>
+          </ul>
+        </div>
+        <div class="map">
+          <iframe
+            title="Aviano / Pordenone — OpenStreetMap"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=12.4300%2C45.8700%2C12.7900%2C46.1100&amp;layer=mapnik&amp;marker=46.0706%2C12.5947"
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="band" aria-hidden="true"></div>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="" width="48" height="48">
+        <div>
+          <p class="footer-name" data-i18n="footer.name">Asociația Culturală Recreativă „Romeni di Pordenone”</p>
+          <p class="footer-tag" data-i18n="footer.tag">Comunitatea românilor din Pordenone · La comunità romena di Pordenone</p>
+        </div>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Romeni di Pordenone · <a class="js-facebook" href="#" target="_blank" rel="noopener">Facebook</a> · <a class="js-email" href="#"></a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
